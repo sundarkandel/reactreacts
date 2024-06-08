@@ -1,14 +1,34 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+ 
+// React Element/JSX
 
-const heading= React.createElement(
-    "h1", 
-  {id: "heading", xyz: "abc"}, 
-"Hello World from React!"
-
+const title = (
+<h1 id= "heading" > 
+This is React written in JSX 
+</h1>
 );
 
 
-const root= ReactDOM.createRoot(document.getElementById("root"));
+//React Functional Components
 
-root.render(heading);
+const HeadingComponent =() => (
+  <h1 className = "heading"> React Functional Component</h1>
+);
+
+
+// Component Composition- Neating more than one componenets in one.
+
+const HeadingComponent2 = () => (
+  <div id ="container"> 
+  <HeadingComponent />
+  <h1 className="headingg"> Composition Component </h1>
+  </div>
+);
+
+
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(<HeadingComponent2 />);
+

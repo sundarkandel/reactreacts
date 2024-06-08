@@ -4,6 +4,9 @@
   "description": "how to push codes git push origin main",
   
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    
     "test": "jest"
   },
   "repository": {
