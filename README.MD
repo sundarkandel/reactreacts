@@ -1,12 +1,14 @@
 #React Basics
 
 #Parcel
+
 -Dev Build
 -Local Server
 -HMR (Hot Module Replacement)
 
 - File Watching algorithm
-  -Caching -Faster builds (saved in .parcel-cache)
+  -Caching
+  -Faster builds (saved in .parcel-cache)
   -Image optimization (Parcel does it for you)
   -Minification
   -Bundling
